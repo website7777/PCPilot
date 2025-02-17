@@ -249,6 +249,9 @@
     <a style="font-size: 14px; position: absolute; left: 1096px; top: 32px;"  href="#Features">Features</a>
     <a style="font-size: 14px; position: absolute; left: 1183px; top: 32px;" href="#Demo">Demo</a>
     <button id="btn1" style="position: absolute; left: 1254px; border: none; top: 21px;"><a style="font-size: 12.5px; position: absolute; left: 16px; top: 8.5px;  color: white; font-weight: 600;" href="#Download">Get Started</a></button>
+    <img id="click" style="width: 25px; height: 25px; position: absolute; right: 25px; top: 25px;" src="lang.png" alt="">
+    <p class="change" style="position: absolute; right: 25px; top: 55px; opacity: 0;">Eng</p>
+    <p class="change1" style="position: absolute; right: 25px; top: 73.5px; opacity: 0;">Ru</p>
 </header>
 <h1 id="h1_first">Контроль ПК откуда угодно</h1>
 <p id="p1">Управляйте своим компьютером удаленно через Telegram. Простое,</p>
@@ -272,12 +275,26 @@
 </div>
 <h1 id="h1_sixth">Увидеть в действии</h1>
 <video id="Demo" width="560" height="315" controls>
-    <source src="final2.mp4" type="video/mp4">
+    <source src="ru.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video><div class="fourth">
     <h1 id="h1_seventh">Готов к контролю?</h1>
     <p id="p7">Начните управлять своим компьютером удаленно с помощью нашего простого в использовании бота Telegram.</p>
     <button id="btn3"><a id="Download" href="https://drive.google.com/drive/folders/1Sz-M5Va0k6l5C1lkRKGuWdE7HvZ1pMZ1?usp=sharing">Скачать Сейчас</a></button>
 </div>
+<script>
+    let change = document.querySelector('.change')
+    let change1 = document.querySelector('.change1')
+    let click = document.querySelector('#click').addEventListener('click', function(){
+    change.style.opacity = "100"
+    change1.style.opacity = "100"
+    })
+    change.addEventListener('click', function(){
+        window.location.href = 'index.html'
+    })
+    change1.addEventListener('click', function(){
+        window.location.href = 'ru.html'
+    })
+</script>
 </body>
 </html>
